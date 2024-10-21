@@ -1,0 +1,42 @@
+:root {
+  --light-pink: hsl(275, 100%, 97%);
+  --grayish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-color: var(--light-pink);
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  grid-template-rows: 20vh 60% 20vh;
+}
+
+.background-image {
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+}
+
+.container {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
